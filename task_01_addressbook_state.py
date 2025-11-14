@@ -376,8 +376,6 @@ def parse_command(line: str):
 
 # ===== AUTOCOMPLETE via prompt_toolkit =====
 
-from prompt_toolkit.completion import Completer, Completion
-
 class BotCompleter(Completer):
     def __init__(self, book: AddressBook):
         self.book = book
